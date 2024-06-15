@@ -7,12 +7,12 @@ const ages = [3, 9, 23, 64, 2, 8, 28, 93];
 console.log(ages[0] - ages[ages.length - 1]);
 
 //Add a new age to your array and repeat the step above to ensure it is dynamic. (works for arrays of different lengths).
-ages.push(20);
+ages.push(20);//add to array
 console.log(ages[0] - ages[ages.length - 1]);
 
 //Use a loop to iterate through the array and calculate the average age.
 var agesSum = 0
-for(var i = 0; i < ages.length; i++){
+for(var i = 0; i < ages.length; i++){//scaling loop
     agesSum = agesSum + ages[i];
 }console.log(agesSum / ages.length);
 
@@ -22,12 +22,12 @@ Use a loop to iterate through the array and calculate the average number of lett
 var lettersSum = 0;
 const names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
 for(var i = 0; i < names.length; i++){
-    lettersSum += names[i].length
+    lettersSum += names[i].length //+= for efficiency
 }console.log(lettersSum / names.length);
 //Use a loop to iterate through the array again and concatenate all the names together, separated by spaces.
 var namesConcat = names[0];
 for(var i = 1; i < names.length; i++){
-    namesConcat = namesConcat.concat(' ', names[i]);
+    namesConcat = namesConcat.concat(' ', names[i]);//compounding onto the previous version of namesConcat
 }console.log(namesConcat);
 
 //How do you access the last element of any array?
@@ -37,8 +37,8 @@ console.log("The first element is accessed by doing: " + names[0]);
 
 /*Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.*/
 let nameLengths = [];
-nameLengths.length = names.length;
-for(var i = 0; i < names.length; i++){
+nameLengths.length = names.length;//only this many needed
+for(var i = 0; i < names.length; i++){ 
     nameLengths[i] = names[i].length;
 }console.log(nameLengths);
 
@@ -120,6 +120,6 @@ console.log(willBuyDrink(true, 10));
 //is the tank was full the gas used for the trip the the amount filled up
 mpg = (odoPre, odoNow, fillVolume) => (odoNow - odoPre)/fillVolume; //arrow funtion
 
-console.log(mpg(19464, 19592, 10.2));
+console.log(mpg(19464, 19592, 10.2));//10.2 gallons used 
 
 
