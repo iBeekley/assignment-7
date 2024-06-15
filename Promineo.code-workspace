@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../OneDrive/Desktop/coding assignments"
+		},
+		{
+			"path": "../OneDrive/Desktop/labs"
+		},
+		{
+			"path": "../OneDrive/Desktop/notes"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "coding assignments"
+	}
+}
